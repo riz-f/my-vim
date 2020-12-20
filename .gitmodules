@@ -1,0 +1,21 @@
+[submodule "pack/vendor/start/coc.nvim"]
+	path = pack/vendor/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "pack/vendor/start/ctrlp.vim"]
+	path = pack/vendor/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "pack/vendor/start/nerdtree"]
+	path = pack/vendor/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/vendor/start/tagbar"]
+	path = pack/vendor/start/tagbar
+	url = https://github.com/preservim/tagbar.git
+[submodule "pack/vendor/start/vim-airline"]
+	path = pack/vendor/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/vendor/start/vim-localvimrc"]
+	path = pack/vendor/start/vim-localvimrc
+	url = https://github.com/embear/vim-localvimrc.git
+[submodule "pack/vendor/start/vim-lsp-cxx-highlight"]
+	path = pack/vendor/start/vim-lsp-cxx-highlight
+	url = https://github.com/jackguo380/vim-lsp-cxx-highlight.git

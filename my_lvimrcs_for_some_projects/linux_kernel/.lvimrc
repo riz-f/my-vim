@@ -1,0 +1,10 @@
+hi LinuxKernelFormatError ctermbg=Red
+syn match LinuxKernelFormatError /\%>100v[^()\{\}\[\]<>]\+/
+setlocal tabstop=8
+setlocal shiftwidth=8
+setlocal softtabstop=8
+setlocal textwidth=100
+setlocal noexpandtab
+setlocal cindent
+setlocal cinoptions=:0,l1,t0,g0,(0
+set wildignore+=*.ko,*.mod.c,*.order,modules.builtin
