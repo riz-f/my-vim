@@ -11,6 +11,9 @@ autocmd CursorHold <buffer> silent call CocActionAsync('highlight')
 
 "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━Shortcuts━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+onoremap <buffer> q i"
+inoremap <buffer> kj <esc>:w<CR>
+
 " Plugin: coc.nvim
 " Use <c-space> to trigger completion
 inoremap <buffer><silent><expr> <c-@> coc#refresh()
@@ -24,11 +27,11 @@ nmap <buffer><silent> gd <Plug>(coc-declaration)
 nmap <buffer><silent> gi <Plug>(coc-implementation)
 nmap <buffer><silent> gr <Plug>(coc-references)
 " Formatting selected code.
-xmap <buffer><leader>f  <Plug>(coc-format-selected)
-nmap <buffer><leader>f  <Plug>(coc-format-selected)
-nmap <buffer><leader>rn <Plug>(coc-rename)
-nmap <buffer><leader>ac  <Plug>(coc-codeaction)
-nmap <buffer><leader>qf  <Plug>(coc-fix-current)
+xmap <buffer><LocalLeader>ft  <Plug>(coc-format-selected)
+nmap <buffer><LocalLeader>ft  <Plug>(coc-format-selected)
+nmap <buffer><LocalLeader>r <Plug>(coc-rename)
+nmap <buffer><LocalLeader>a  <Plug>(coc-codeaction)
+nmap <buffer><LocalLeader>fx  <Plug>(coc-fix-current)
 " Select range
 nmap <buffer><silent> <C-s> <Plug>(coc-range-select)
 xmap <buffer><silent> <C-s> <Plug>(coc-range-select)
@@ -52,8 +55,8 @@ inoremap <buffer><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                             \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-nmap <C-j> :CocCommand document.jumpToNextSymbol<CR>
-nmap <C-k> :CocCommand document.jumpToPrevSymbol<CR>
+                            \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+nnoremap <C-j> :CocCommand document.jumpToNextSymbol<CR>
+nnoremap <C-k> :CocCommand document.jumpToPrevSymbol<CR>
 
 "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

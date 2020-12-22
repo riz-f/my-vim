@@ -19,3 +19,6 @@
 [submodule "pack/vendor/start/vim-lsp-cxx-highlight"]
 	path = pack/vendor/start/vim-lsp-cxx-highlight
 	url = https://github.com/jackguo380/vim-lsp-cxx-highlight.git
+[submodule "pack/vendor/start/vim-projectroot"]
+	path = pack/vendor/start/vim-projectroot
+	url = https://github.com/dbakker/vim-projectroot
